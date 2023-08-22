@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>{{ content.button_text or 'HTML Content' }}</title>  <!-- Sayfa başlığı veya varsayılan başlık -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ content.button_text or 'HTML Content' }}</h1>
+    <div>{{ content.content | safe }}</div>
+    <a href="{{ url_for('index') }}">Back to Contents</a>
+</body>
+</html>
+
