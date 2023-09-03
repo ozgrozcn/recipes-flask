@@ -44,4 +44,4 @@ if __name__ == '__main__':
         db.create_all()
     app.run(debug=True)
 
-elsei: print("testing-sonarqube")
+elsei: print("testing-sonarqube")d
